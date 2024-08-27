@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saylani Student Form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Saylani Student Form</h1>
+        <form id="studentForm">
+            <div class="form-group">
+                <label for="studentName">Name:</label>
+                <input type="text" id="studentName" name="studentName" required>
+            </div>
+            <div class="form-group">
+                <label for="studentEmail">Email:</label>
+                <input type="email" id="studentEmail" name="studentEmail" required>
+            </div>
+            <div class="form-group">
+                <label for="studentPhone">Phone:</label>
+                <input type="tel" id="studentPhone" name="studentPhone" required>
+            </div>
+            <div class="form-group">
+                <label for="studentCourse">Course:</label>
+                <select id="studentCourse" name="studentCourse" required>
+                    <option value="">Select a course</option>
+                    <option value="Web Development">Web Development</option>
+                    <option value="Data Science">Data Science</option>
+                    <option value="Graphic Design">Graphic Design</option>
+                </select>
+            </div>
+            <button type="submit">Submit</button>
+        </form>
+        <div id="message" class="message"></div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
